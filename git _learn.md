@@ -1,6 +1,9 @@
 ### git 学习
 
 #### 1. git add file1...   添加本地库文件到仓库，未提交状态
+			git add -A  提交所有变化
+			git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
+			git add .  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
 #### 2. git commit -m <message>  一次提交添加的文件们到仓库
 #### 3. 版本修改 
 		diff 相关知识：http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html
