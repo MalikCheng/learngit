@@ -1,6 +1,6 @@
 # 错误记录
 ---
-## 2. git 遇到问题：Please make sure you have the correct access rightsand the repository exists 或Permission denied (publickey).##
+## 1. git 遇到问题：Please make sure you have the correct access rightsand the repository exists 或Permission denied (publickey)
 
 遇到这类问看看网上说一点都不详细，所以经过一番研究终于搞定，想给像我这样的童鞋给一篇仔细的解决办法
 
