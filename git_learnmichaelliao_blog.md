@@ -87,13 +87,13 @@
 			合并某分支到当前分支：git merge <branchname>，是快速合并模式，如果没有冲突，只将head指针指向最后一次提交的当做master，这样删除分支后，会丢失分支信息
 			新命令：git merge --no-ff -m <message> <branchname>,禁用快速合并模式并生成commit信息，这样就能在log看到merge时的信息
 			
-##### 6.6 Bug分支
+##### 6.5 Bug分支
 			情景：以前上线版本或这其他以前负责的项目（只要符合修复bug内容和自己分支内容不冲突即可）出现了bug，紧急需要处理，但是自己在的dev分支工作还没有完成，不能随便切换分支哦 。
 				在自己dev分支使用git stash（储藏）命令储藏现在分支的未完结的工作进度。此时，就可以切换master分支，建issue分支来处理bug后 add、commit，到master分支merge，删除issue分支；
 					到自己的dev分支，git stash apply（恢复储藏的工作，stash保存工作进度；git stash pop 恢复储藏的工作，stash不记录保存 ）。git stash list 查所有保存工作进度
 					git stash drop [stash_id] 删除储藏的进度
 				小结：git stash 命令后，会隐藏当前进度。会回到上次提交后的状态。
-##### 6.7 多人协作
+##### 6.6 多人协作
 			开发中多个人会在自己本地分支关联远程库master下dev分支，push自己的代码。
 			这时会遇到两个人共同编辑一行代码，前一个人push成功，后一个人会push失败。
 			此刻要pull回来，打开冲突文件处理冲突内容，才会push成功。
@@ -122,20 +122,22 @@
 											$ git branch --set-upstream-to=origin/dev dev //本地dev与远程dev建立链接
 			
 #### 7. 标签管理
-			##### 7.1 创建标签
+#####  7.1 创建标签
 					标签可以给每次的提交打上标签，如果没有指定commit id会指定当前的最新的一次提交。
 					命令 git tag <commitId> tagname
 					列出所有tag git tag //不是按时间排序，是按字母排序
 					列出某标签的信息 git show tagname
 					删除标签 git tag -d tagname
-			##### 7.2 操作标签
+##### 7.2 操作标签
 					标签能在本地存也能推送到远程库存放
 						命令：git push origin tagname //一次推送一次标签
 								git push origin tags  //一次推送全部没有推送过标签们
 								
 					推送到远程库删除标签比较麻烦，现在本地删除标签；然后，从远程删除。删除命令也是push，但是格式如下：git push origin :refs/tags/v0.9	
 					在所在的repository里的releases里可以看到标签，地址https://github.com/MalikCheng（用户名）/learngit（项目）/tags
----			
+---	
+最后补充几个常用命令：
+		
 			git remote show 展示远程库的名字
 			git show 		展示本地库信息
 			git branch -m newname 将本地所在分支赋予新名字
