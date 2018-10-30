@@ -118,8 +118,20 @@
 													git branch --set-upstream-to=origin/<branch> dev
 											$ git branch --set-upstream-to=origin/dev dev //本地dev与远程dev建立链接
 			
-			
-			
+#### 7. 标签管理
+			##### 7.1 创建标签
+					标签可以给每次的提交打上标签，如果没有指定commit id会指定当前的最新的一次提交。
+					命令 git tag <commitId> tagname
+					列出所有tag git tag //不是按时间排序，是按字母排序
+					列出某标签的信息 git show tagname
+					删除标签 git tag -d tagname
+			##### 7.2 操作标签
+					标签能在本地存也能推送到远程库存放
+						命令：git push origin tagname //一次推送一次标签
+								git push origin tags  //一次推送全部没有推送过标签们
+								
+					推送到远程库删除标签比较麻烦，现在本地删除标签；然后，从远程删除。删除命令也是push，但是格式如下：git push origin :refs/tags/v0.9	
+					在所在的repository里的releases里可以看到标签，地址https://github.com/MalikCheng（用户名）/learngit（项目）/tags
 ---			
 			git remote show 展示远程库的名字
 			git show 		展示本地库信息
