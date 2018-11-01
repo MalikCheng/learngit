@@ -10,7 +10,9 @@
 ----------
 解决方法如下：
 
- - 进入https://github.com/settings/profile查看自己的账号和邮箱，记到记事本下来，下面会用到。![这是账号名字](https://img-blog.csdn.net/20170213194852303?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+ - 进入https://github.com/settings/profile查看自己的账号和邮箱，记到记事本下来，下面会用到。
+ 
+![这是账号名字](https://img-blog.csdn.net/20170213194852303?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ![自己的邮箱](https://img-blog.csdn.net/20170213194810849?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 	
  - 打开Git输入命令git config --global user.name "yourname"回车
