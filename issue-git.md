@@ -10,11 +10,12 @@
 ----------
 解决方法如下：
 
- - 进入https://github.com/settings/profile查看自己的账号和邮箱，记到记事本下来，下面会用到。![这是账号名字](http://img.blog.csdn.net/20170213194852303?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-![自己的邮箱](http://img.blog.csdn.net/20170213194810849?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+ - 进入https://github.com/settings/profile查看自己的账号和邮箱，记到记事本下来，下面会用到。![这是账号名字](https://img-blog.csdn.net/20170213194852303?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![自己的邮箱](https://img-blog.csdn.net/20170213194810849?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+	
  - 打开Git输入命令git config --global user.name "yourname"回车
 git config --global user.email“your@email.com"回车
-![这里写图片描述](http://img.blog.csdn.net/20170213195522968?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://img-blog.csdn.net/20170213195522968?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 $ ssh-keygen -t rsa -C "your@email.com"（请填你设置的邮箱地址）回车
 
 接着出现：
@@ -29,18 +30,18 @@ The key's randomart image is:
 |         ==++. . |
 |      . ++.o .  .|
 |     ..o++Oo     |
-+----[SHA256]-----+![这里写图片描述](http://img.blog.csdn.net/20170213195627978?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
++----[SHA256]-----+![这里写图片描述](https://img-blog.csdn.net/20170213195627978?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 这样的
  - 之后打开提示的目录下记事本打开id_rsa.pub，复制里面内容。
  - 进入自己的账号https://github.com/settings/keys      点击 New sshKey
- ![这里写图片描述](http://img.blog.csdn.net/20170213195735518?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+ ![这里写图片描述](https://img-blog.csdn.net/20170213195735518?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
 ----------
 
  - 复制的内容粘贴到Key里，Title可以不写，亲测。
 
-![这里写图片描述](http://img.blog.csdn.net/20170213200646672?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://img-blog.csdn.net/20170213200646672?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
  - 验证：$ ssh -T git@github.com回车 看到
 Hi MalikCheng! You've successfully authenticated, but GitHub does not provide shell access.
 表示成功了！！
