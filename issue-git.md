@@ -4,13 +4,15 @@
 
 遇到这类问看看网上说一点都不详细，所以经过一番研究终于搞定，想给像我这样的童鞋给一篇仔细的解决办法
 
-**今天第一下载完 Git-2.11.1-64-bit.exe最新版本，想从Git库中克隆项目。没想到原来要进行密钥生成。就是和你https://github.com上的账号进行验证。在本机生成密钥与自己账号绑定。这样就可以从git上下项目了**
+**今天第一下载完 Git-2.11.1-64-bit.exe最新版本，想从Git库中克隆项目。没想到原来要进行密钥生成。就是和你https://github.com
+上的账号进行验证。在本机生成密钥与自己账号绑定。这样就可以从git上下项目了**
 
 
 ----------
 解决方法如下：
 
- - 进入https://github.com/settings/profile查看自己的账号和邮箱，记到记事本下来，下面会用到。
+ - 进入https://github.com/settings/profile   
+ 查看自己的账号和邮箱，记到记事本下来，下面会用到。
  
 ![这是账号名字](https://img-blog.csdn.net/20170213194852303?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ![自己的邮箱](https://img-blog.csdn.net/20170213194810849?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyOTE3Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
