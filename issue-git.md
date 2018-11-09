@@ -73,3 +73,17 @@ Hi MalikCheng! You've successfully authenticated, but GitHub does not provide sh
 ####	方案2(未测试)：直接找到.git文件（有时可能是隐藏文件）——用记事本打开config，将url内容改成如下格式即可：	
 		[remote"origin"]
 		url = git@github:用户名/项目名.git
+		
+--
+## 3.git branch 执行之后没有反应
+				
+#### 必须使用git init命令创建仓库，执行git add . 和git commit（提交成功后）,再使用git branch命令，才显示出本地分支。
+```shell
+					git branch ：查看本地分支
+					git branch -a :查看本地及远程仓库的分支
+					git branch --all ：查看本地及远程仓库的分支
+```
+				“因为git的分支必须指向一个commit，没有任何commit就没有任何分支
+
+				提交第一个commit后git自动创建master分支” -------廖雪峰
+--------------------- 
