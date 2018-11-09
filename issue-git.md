@@ -86,4 +86,15 @@ Hi MalikCheng! You've successfully authenticated, but GitHub does not provide sh
 				“因为git的分支必须指向一个commit，没有任何commit就没有任何分支
 
 				提交第一个commit后git自动创建master分支” -------廖雪峰
+
 --------------------- 
+
+## 4. 'origin' does not appear to be a git repository
+
+```shell
+	fatal: 'origin' does not appear to be a git repository
+	fatal: Could not read from remote repository.
+```
+		说明本地仓库里没有指向远程库的origin，
+		解决：
+		git remote add origin git@github.com:MalikCheng/myblog.git 
